@@ -93,9 +93,6 @@ body{
 .contentContainer>*{
     background-color: white;
 }
-#bold{
-    font-weight: bold;
-}
 header{
     grid-column: 2;
     justify-self: center;
