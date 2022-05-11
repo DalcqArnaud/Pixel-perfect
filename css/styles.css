@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+    color: #8c8881;
+}
+
+.contentContainer{
+    margin: 20px;
+    display: grid;
+    row-gap: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .contentContainer{
+        grid-template-columns: 1fr 50% 1fr;
+    }
+    .filmsContainer>*{
+        grid-template-columns: 25% 75%;
+    }
+    .facebook>i{
+        font-size: xx-large;
+    }
+    .linkedin>i{
+        font-size: xx-large;
+    }
+    .twitter>i{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 768px){
+    .contentContainer{
+        grid-template-columns: 1fr 75% 1fr;
+    }
+    .filmsContainer>*{
+        grid-template-columns: 25% 75%;
+    }
+    .facebook>i{
+        font-size: large;
+    }
+    .facebook>a{
+        font-size: 75%;
+    }
+    .linkedin>i{
+        font-size: large;
+    }
+    .linkedin>a{
+        font-size: 75%;
+    }
+    .twitter>i{
+        font-size: large;
+    }
+    .twitter>a{
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .contentContainer{
+        grid-template-columns: 1fr 90% 1fr;
+    }
+    .filmsContainer>*{
+        grid-template-rows: 1fr 1fr;
+    }
+    .facebook>i{
+        font-size: small;
+    }
+    .facebook>a{
+        font-size: 50%;
+    }
+    .linkedin>i{
+        font-size: small;
+    }
+    .linkedin>a{
+        font-size: 50%;
+    }
+    .twitter>i{
+        font-size: small;
+    }
+    .twitter>a{
+        font-size: 50%;
+    }
+}
+
+.contentContainer>*{
+    background-color: white;
+}
+#bold{
+    font-weight: bold;
+}
+header{
+    grid-column: 2;
+    justify-self: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #cccccc;
+}
+header>h1{
+    color: #dd5555;
+    text-align: center;
+    margin: 5px 0;
+}
+header>h2{
+    text-align: center;
+    margin: 5px 0;
+}
+header>p{
+    text-align: justify;
+    margin: 5px 0;
+}
+header>button{
+    border: none;
+    background-color: #dd5555;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100%;
+    font-weight: bold;
+}
+header>button>a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    grid-column: 2;
+    width: 100%;
+    color: #cccccc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ul{
+    list-style-type: none;
+}
+.socialMedia{
+    width: 75%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.facebook{
+    display: flex;
+    flex-direction: column;
+}
+.facebook>i{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facebook>a{
+    text-decoration: none;
+    color: #cccccc;
+}
+.linkedin{
+    display: flex;
+    flex-direction: column;
+}
+.linkedin>i{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linkedin>a{
+    text-decoration: none;
+    color: #cccccc;
+}
+.twitter{
+    display: flex;
+    flex-direction: column;
+}
+.twitter>i{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.twitter>a{
+    text-decoration: none;
+    color: #cccccc;
+}
+section{
+    grid-column: 2;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+section>h2{
+    text-align: center;
+    padding: 30px 0;
+}
+.highlight{
+    background-color: #cccccc;
+}
+.filmsContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.filmsContainer>*{
+    display: grid;
+}
+.OdysseyImg{
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}
+.OdysseyTxt>h3{
+    text-align: center;
+    padding: 10px;
+}
+.OdysseyTxt>p{
+    text-align: justify;
+    padding: 5px;
+}
+.MisterHulotImg{
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}
+.MisterHulotTxt>h3{
+    text-align: center;
+    padding: 10px;
+}
+.MisterHulotTxt>p{
+    text-align: justify;
+    padding: 5px;
+}
+.AlienImg{
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}
+.AlienTxt>h3{
+    text-align: center;
+    padding: 10px;
+}
+.AlienTxt>p{
+    text-align: justify;
+    padding: 5px;
+}
